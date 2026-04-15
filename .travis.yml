@@ -1,0 +1,12 @@
+language: java
+jdk:
+  - openjdk17
+
+# Indicamos que usamos Gradle
+before_install:
+  - chmod +x gradlew
+
+# El comando que Travis ejecutará para compilar y correr la prueba JUnit
+script:
+  - ./gradlew test
+  -
