@@ -3,12 +3,12 @@
 ## Tabla de Contenidos
 1. [Resumen](#resumen)
 2. [Requerimientos](#requerimientos)
-3. [Instalación](#instalación)
+3. [Instalación y Desarrollo](#instalación-y-desarrollo)
 4. [Configuración](#configuración)
-5. [Uso](#uso)
-6. [Contribución](#contribución)
-7. [Roadmap](#roadmap)
-
+5. [Compilación (JAR)](#compilación-jar)
+6. [Guía de Uso](#uso)
+7. [Contribución](#contribución)
+8. [Roadmap](#roadmap)
 ---
 
 ## Resumen
@@ -66,18 +66,29 @@ Debido a la naturaleza de los datos médicos, este sistema está diseñado para 
 
 ## Configuración
 
-### Configuración del producto
-Las credenciales de conexión y parámetros del servidor deben configurarse modificando el archivo `application.properties` (o variables de entorno locales) antes de compilar para producción:
+El sistema utiliza un archivo de configuración externo ubicado en `src/main/resources/config.properties`. **Es obligatorio** configurar este archivo antes de ejecutar:
 
-* db.url=jdbc:mariadb://localhost:3306/consultorio_db
-* db.user=root
-* db.password=tu_contraseña_local
-* server.port=8080
+```properties
+db.host=localhost
+db.port=3306
+db.name=consultorio_db
+db.user=root
+db.password=TU_CONTRASEÑA
+db.params=?useGSSAPI=false
+```
 
-### Configuración de los requerimientos
-Asegurarse de que el puerto `3306` esté libre para MariaDB y el puerto `8080` esté libre para la ejecución del servidor web local.
+#compilación-jar
+Para generar el producto final ejecutable (Fat JAR):
 
----
+Abrir el panel de Gradle en el IDE.
+
+Navegar a Tasks -> build -> doble clic en build.
+
+Localizar el archivo generado en: build/libs/Consultorio_Dental-1.0-SNAPSHOT.jar.
+
+Ejecución:
+Bash
+java -jar build/libs/Consultorio_Dental-1.0-SNAPSHOT.jar
 
 ## Uso
 
