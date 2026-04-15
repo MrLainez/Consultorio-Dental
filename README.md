@@ -1,7 +1,7 @@
 # Sistema de Expediente Clínico Digital - Consultorio Dental
 
 ## Tabla de Contenidos
-1. [Resumen Ejecutivo](#resumen-ejecutivo)
+1. [Resumen Ejecutivo](#resumen)
 2. [Requerimientos](#requerimientos)
 3. [Instalación](#instalación)
 4. [Configuración](#configuración)
@@ -11,7 +11,7 @@
 
 ---
 
-## Resumen Ejecutivo
+## Resumen
 
 ### Descripción
 Sistema integral de gestión de expedientes clínicos diseñado para automatizar y asegurar el registro de pacientes y sus historiales de consultas médicas en un entorno local.
