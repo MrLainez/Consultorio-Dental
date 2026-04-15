@@ -1,7 +1,7 @@
 # Sistema de Expediente Clínico Digital - Consultorio Dental
 
 ## Tabla de Contenidos
-1. [Resumen Ejecutivo](#resumen)
+1. [Resumen](#resumen)
 2. [Requerimientos](#requerimientos)
 3. [Instalación](#instalación)
 4. [Configuración](#configuración)
